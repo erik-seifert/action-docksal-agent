@@ -1,14 +1,6 @@
 # action.yml
 name: 'Hello World'
 description: 'Greet someone and record the time'
-inputs:
-  docker-host:  # id of input
-    description: 'Docker host to call'
-    required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'docker://docksal/ci-agent:latest'
